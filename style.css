@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  --desred: hsl(0, 36%, 70%);
+  --softred:hsl(0, 93%, 68%);
+  --dgred:hsl(0, 6%, 24%);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans";
+}
+
+main .block-1 {
+  margin-top: 40px;
+}
+main .block-1 .head {
+  padding: 0 7%;
+}
+main .block-1 .head .header {
+  width: 35%;
+}
+main .block-1 .person {
+  margin-top: 25px;
+  width: 100%;
+}
+main .block-1 .t1 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2.7em;
+  letter-spacing: 0.75rem;
+  color: var(--desred);
+}
+main .block-1 .t1 span {
+  display: block;
+}
+main .block-1 .t1 .x1, main .block-1 .t1 .x2 {
+  color: black;
+}
+main .block-1 .s1 {
+  text-align: center;
+  padding: 0 5%;
+  line-height: 1.5em;
+  color: var(--desred);
+}
+main .block-1 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+main .block-1 .form form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .block-1 .form form input {
+  font-family: "Josefin Sans";
+  width: 85%;
+  border-radius: 30px;
+  position: absolute;
+  padding: 12px 17px;
+  border: 2px solid hsl(0deg, 1%, 75%);
+}
+main .block-1 .form form input:focus {
+  outline: none;
+}
+main .block-1 .form form input.x {
+  border-color: red;
+}
+main .block-1 .form form input.y {
+  border-color: lightgreen;
+}
+main .block-1 .form form .icon-e {
+  position: relative;
+  z-index: 1;
+  display: none;
+  width: 15px;
+  left: 35%;
+}
+main .block-1 .form form .icon-e.rev {
+  display: flex;
+}
+main .block-1 .form form .a {
+  padding: 12px 0px;
+  width: 14%;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: -2px 8px 12px var(--desred);
+  z-index: 1;
+  left: 37%;
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+}
+main .block-1 .form form .a .aro {
+  width: 100%;
+}
+main .block-1 .form form .a .aro .arrow {
+  width: 10px;
+  display: flex;
+  margin-left: 43%;
+}
+main .block-1 .form form .a:hover {
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 81%, 81%));
+}
+main .block-1 .form .error {
+  color: red;
+  padding-top: 10px;
+  margin-left: 12%;
+  display: none;
+}
+main .block-1 .form .error.disp {
+  display: block;
+}
+main .desk {
+  display: none;
+}
+
+@media (max-width: 280px) {
+  main .block-1 .t1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 620px) {
+  body {
+    background-image: linear-gradient(135deg, hsla(0deg, 74%, 85%, 0.123), hsl(0deg, 100%, 98%));
+  }
+  body main {
+    background-image: url(images/bg-pattern-desktop.svg);
+    z-index: 1;
+  }
+  body main .block-1 .form form .a {
+    width: 70px;
+    left: 38%;
+  }
+}
+@media (min-width: 850px) {
+  body main {
+    display: flex;
+    flex-direction: row;
+  }
+  body main .block-1 {
+    width: 55%;
+  }
+  body main .block-1 .head {
+    padding: 0 10%;
+  }
+  body main .block-1 .person {
+    display: none;
+  }
+  body main .block-1 .s1, body main .block-1 .t1 {
+    text-align: left;
+    padding: 0 25% 0 10%;
+  }
+  body main .block-1 .t1 {
+    font-size: 5em;
+    margin-top: 100px;
+  }
+  body main .block-1 .s1 {
+    margin-top: -50px;
+  }
+  body main .block-1 .form {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  body main .block-1 .form form {
+    justify-content: flex-start;
+    padding: 0 10%;
+    width: 100%;
+  }
+  body main .block-1 .form form input {
+    position: relative;
+    width: 60%;
+  }
+  body main .block-1 .form form .a {
+    left: -6%;
+  }
+  body main .block-1 .form form .icon-e {
+    left: -7%;
+  }
+  body main .desk {
+    display: block;
+    width: 45%;
+    height: 100vh;
+  }
+}
+@media (min-width: 1100px) {
+  main .block-1 {
+    width: 62%;
+  }
+  main .desk {
+    width: 38%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./index.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="block-1">
+      <div class="head">
+        <img src="images/logo.svg" alt="" class="header">
+      </div>
+      <img src="images/hero-mobile.jpg" alt="" class="person">
+      <p class="t1">WE'RE <span class="x1">COMING</span><span class="x2">SOON</span></p>
+      <p class="s1">Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <div class="form">
+        <form action="">
+          <input id="in" type="email" placeholder="Email Address">
+          <img src="images/icon-error.svg" alt="" class="icon-e" id="ejpg">
+          <button type="submit" class="a" onclick="return validation()">
+            <div class="aro">
+              <img src="images/icon-arrow.svg" alt="" class="arrow" id="arr">
+            </div>
+          </button>
+        </form>
+        <small class="error" id="err">Please provide a valid email</small>
+      </div>
+    </div>
+    <img class="desk" src="images/hero-desktop.jpg" alt="">
+  </main>
+</body>
+</html>
