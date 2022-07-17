@@ -131,20 +131,20 @@ main .desk {
   }
 }
 @media (min-width: 620px) {
-  body {
-    background-image: linear-gradient(135deg, hsla(0deg, 74%, 85%, 0.123), hsl(0deg, 100%, 98%));
-  }
-  body main {
-    background-image: url(images/bg-pattern-desktop.svg);
-    z-index: 1;
-  }
   body main .block-1 .form form .a {
     width: 70px;
     left: 38%;
   }
 }
 @media (min-width: 850px) {
+  body {
+    background-image: linear-gradient(135deg, hsla(0deg, 74%, 85%, 0.027), hsl(0deg, 100%, 98%));
+    background-repeat: no-repeat;
+  }
   body main {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    z-index: 1;
     display: flex;
     flex-direction: row;
   }
